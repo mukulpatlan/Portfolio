@@ -1,0 +1,323 @@
+body {
+
+	font-family: 'Muli', sans-serif;
+
+}
+
+section{
+	margin-top: 40px;
+}
+
+#nav-li{
+	background: rgba(255, 255, 255, 0.60);
+	font-size: 15px;
+}
+
+#nav-title{
+	font-family: 'Arvo', serif;
+	font-size: 40px;
+}
+
+
+.jumbotron {
+  
+    background: url(../img/showcase-img.png); 
+    background-size: cover;
+    height: 645px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 10;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.showcase-header{
+	font-size: 50px;
+	padding-top: 150px;
+
+}
+
+.profile-showcase{
+	border-radius: 70px;
+	height: 150px;
+	width: 150px;
+}
+
+.show-header > strong{
+	color: #fffc00;
+}
+
+
+
+canvas{
+	left: 0;
+    position: absolute;
+    top: 0;
+}
+
+hr{
+	width:10%;
+	border-color: #000000;
+
+}
+
+#education{
+	text-align: center;
+	background: #EC644B;
+	margin-top: 0px;
+	height: 550px;
+      
+}
+
+#education .edu{
+	height: 250px;
+}
+
+#education .grad{
+	display: none;
+}
+
+#project{
+	text-align: center;
+	margin-top: 0px;
+	height: 490px;
+}
+
+.project-img{
+	height: 85px;
+	width: 90px;
+	border-radius: 30px;
+}
+
+
+#skills{
+	background: #337ab7;
+	height: 460px;
+}
+
+#hobbies{
+	text-align: center;
+}
+
+#gallery{
+   background-image: url(../img/gallery-background.png);	
+   height: 620px;
+   width: 100%;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+
+}
+
+.img-gal{
+	padding: 2%;
+}
+
+#gallery > ul > li{
+	    background-color: #6C7A89;
+    color: #fff;
+    border-color: black;
+}
+
+.img-thumbnail{
+	height: 250px;
+    width: 250px;
+}
+
+#contact{
+	 text-align: center;
+}
+
+.row{
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+
+form{
+	width: 100%;
+	text-align: center;
+}
+
+footer{
+	height: 120px;
+	background-color: #22313F;
+
+}
+
+
+.icon-social{
+	text-align: center;
+	text-decoration: none;
+	overflow: none;
+	padding: 30px;
+
+}
+
+.icon-fb{
+	color: #3b5998;
+}
+
+.icon-gp{
+	color: #dd4b39;
+}
+
+.icon-li{
+	color: #007bb5;
+}
+
+.icon-fb:hover{
+	color: #384f7d;
+}
+
+.icon-gp:hover{
+	color: #b13e30;
+}
+
+.icon-li:hover{
+	color: #065e88;
+}
+
+
+.progress{
+	height: 40px;
+	width:70%;
+	text-align: center;
+}
+
+canvas{
+  position: absolute;
+  top: -webkit-calc(50% - 250px);
+  top: calc(50% - 250px);
+  left: -webkit-calc(50% - 300px);
+  left: calc(50% - 300px);
+}
+
+
+@media(max-width: 1200px){
+	
+	#education{
+		
+		text-align: center;
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1035px){
+	
+	#nav-container{
+	width:90%;
+	}
+	.showcase-header{
+
+	}
+	#gallery{
+		height: 630px;
+		
+	}
+
+}
+
+
+@media(max-width: 991px){
+	.text-about{
+		font-size: 5px;
+	}
+	
+	.jumbotron{
+		height: 617px;
+		padding-bottom: 0;
+	}
+
+	#education{
+		height: 1000px;
+		text-align: center;
+	}
+
+	#skills{
+		height: 750px;
+	}
+
+	#hobbies{
+		text-align: center;
+	}
+
+	#gallery{
+		height: 930px;
+		
+	}
+	.icon-social{
+		float: none;
+
+	}
+
+	form{
+		padding-top: 35px;
+	}
+
+
+}
+
+@media(min-width: 768px) and (max-width: 831px){
+		
+	#nav-li{
+	 font-size: 12px;
+	}
+
+	#nav-title{
+	font-size: 30px;
+    }
+
+	.jumbotron{
+		height: 617px;
+		padding: 0;
+		
+	}
+
+	
+}
+
+@media (min-width: 515px) and (max-width: 767px){
+	
+	.nav-tab{
+		text-align: center;
+	}
+
+	.img-div{
+		padding: 10px;
+		text-align: center;
+	}
+
+	.img-thumbnail{
+		width: 200px;
+		height: 200px;
+	}
+
+	#gallery{
+		height: 830px;
+		text-align: center;
+	}
+
+	.img-gal{
+		padding: 5px;
+	}
+
+
+
+}
+
+
+@media(max-width: 514px){
+	#gallery{
+		text-align: center;
+		height: 930px
+	}
+}
+
+@media(max-width: 429px){
+	#gallery{
+		text-align: center;
+		height: 940px
+	}
+}
+
+
+
