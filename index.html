@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Portfolio: Patlan Jr</title>
+		<title>Portfolio: Mukul Patlan</title>
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Muli:400italic' rel='stylesheet' type='text/css'>
 
@@ -23,11 +23,11 @@
 	</head>
 	<body>
 
-        
-              <div class="wow bounce">
+          
+              <div class="wow bounce" id="about">
 
               
-                    <nav class="navbar navbar-default navbar-fixed-top">
+                    <nav class="navbar navbar-default navbar-fixed-top" style="opacity: 0.80">
                     <!--   <div class=""> -->
                         <div class="navbar-header">
                         
@@ -39,7 +39,7 @@
                            
                           </button>
                           
-                          <a class="navbar-brand" href="#gallery" id="nav-title">Patlan Jr.</a>
+                          <a class="navbar-brand" href="#about" id="nav-title">Mukul Patlan</a>
                         </div>
                         <div id="navbar" class="collapse navbar-collapse">
                           <ul class="nav navbar-nav pull-right">
@@ -55,25 +55,27 @@
                     </nav>
                  
             
-         
+                  <div>
                     <div class="jumbotron">
-                        <div class="col-md-6">
-                          <div class="wow rubberBand" class="text-about">
+                      <div class="container">
+                        <div class="col-md-12" style="padding: 10%">
+                          <div class="wow rubberBand text-about pull-left">
                             <div class="showcase-header" style="font-family: 'Muli', sans-serif; color: #fff">#About_Me</div>
-                              <img src="img/profile.png" class="profile-showcase circle">
-                              <p style="font-family: 'Muli', sans-serif; padding-top: 5px; text-shadow: 2px 2px #00bf8f; margin-bottom: 0">Hello, my name is <strong>MUKUL KUMAR</strong>, currently an intern in <strong>NUADA LABS</strong> as<br><strong>UI/UX DEVELOPER</strong></p>
                               <div>
-                       <a href="#education"><i class="fa fa-angle-down fa-3x" style="color: #fff; padding: 8%"></i></a>
-                        </div>
+                              <img src="img/profile.png" class="profile-showcase circle">
+                              <p style="font-family: 'Muli', sans-serif; padding-top: 5px; margin-bottom: 0">Hello, my name is <strong>MUKUL KUMAR</strong>, currently an intern in <strong>NUADA LABS</strong> as<br><strong>UI/UX DEVELOPER</strong></p>
+                              </div>
                           </div>
-                        </div>
-                        
+                         </div>
+                            <div class="text-center">
+                               <a href="#education"><i class="fa fa-angle-down fa-3x fa-blink" style="color: #fff"></i></a>
+                            </div>
                       </div>
-                      
-                        
                     </div>
-                
-
+                  </div>
+                        
+                </div>
+            
     
 
               <section id="education">
@@ -340,7 +342,13 @@
 
                   </div>
                   <div>
-                    <a href="#education"><i class="fa fa-angle-up fa-3x pull-right" style="padding-bottom:20px; color: #000"></i></a>
+                    <a href="#about">
+                        <span class="fa-stack fa-2x pull-right" style="padding-right:6%;padding-bottom: 5%; color: #000">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-angle-up fa-stack-2x fa-inverse"></i>
+                        </span>
+                      
+                      </a>
                   </div>
                 </div>
 
@@ -374,9 +382,9 @@
     <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).on('ready', function(e){
           // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
+          $("a").click( function(event) {
 
             // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {

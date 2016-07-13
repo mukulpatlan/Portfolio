@@ -23,17 +23,17 @@ section{
   
     background: url(../img/showcase-img.png); 
     background-size: cover;
-    height: 645px;
     text-align: center;
     color: #fff;
-    text-shadow: 10;
-    margin-bottom: 0;
-    text-align: center;
+    margin: 0;
+    
+
+    
 }
 
 .showcase-header{
 	font-size: 50px;
-	padding-top: 150px;
+	
 
 }
 
@@ -45,6 +45,19 @@ section{
 
 .show-header > strong{
 	color: #fffc00;
+}
+
+@keyframes fa-blink {
+     0% { opacity: 1; }
+     
+     100% { opacity: 0; }
+ }
+.fa-blink {
+   -webkit-animation: fa-blink .75s linear infinite;
+   -moz-animation: fa-blink .75s linear infinite;
+   -ms-animation: fa-blink .75s linear infinite;
+   -o-animation: fa-blink .75s linear infinite;
+   animation: fa-blink .75s linear infinite;
 }
 
 
@@ -193,22 +206,38 @@ canvas{
 }
 
 
+@media(max-width: 1300px){
+	.jumbotron{
+		
+		/*margin-bottom: -5%;*/
+		
+	}
+}
+
 @media(max-width: 1200px){
 	
 	#education{
 		
 		text-align: center;
 	}
+
+	.jumbotron{
+		
+		/*margin-bottom: -6%;*/
+		
+	}
 }
 
 @media(min-width: 992px) and (max-width: 1035px){
 	
-	#nav-container{
-	width:90%;
+	#navbar{
+		font-size: 12px;
 	}
-	.showcase-header{
-
+	
+	#nav-title{
+		font-size: 20px;
 	}
+	
 	#gallery{
 		height: 630px;
 		
@@ -218,15 +247,7 @@ canvas{
 
 
 @media(max-width: 991px){
-	.text-about{
-		font-size: 5px;
-	}
 	
-	.jumbotron{
-		height: 617px;
-		padding-bottom: 0;
-	}
-
 	#education{
 		height: 1000px;
 		text-align: center;
@@ -268,7 +289,7 @@ canvas{
 
 	.jumbotron{
 		height: 617px;
-		padding: 0;
+		/*margin-bottom: -7%;*/
 		
 	}
 
@@ -279,6 +300,12 @@ canvas{
 	
 	.nav-tab{
 		text-align: center;
+	}
+
+	.jumbotron{
+		
+		/*margin-bottom: -10%;*/
+		
 	}
 
 	.img-div{
@@ -306,6 +333,11 @@ canvas{
 
 
 @media(max-width: 514px){
+	.jumbotron{
+		
+		/*margin-bottom: -11%;*/
+		
+	}
 	#gallery{
 		text-align: center;
 		height: 930px
@@ -313,6 +345,12 @@ canvas{
 }
 
 @media(max-width: 429px){
+	.jumbotron{
+		
+		/*margin-bottom: -11%;*/
+		
+	}
+
 	#gallery{
 		text-align: center;
 		height: 940px
